@@ -1,11 +1,11 @@
 #!/bin/bash
-
+clear
 # Colors
 YELLOW='\033[1;33m'
 GREEN='\033[1;32m'
 CYAN='\033[1;36m'
 NC='\033[0m' # No Color
-
+clear
 # Step 1
 echo -e "${YELLOW}[1/8] Updating system...${NC}"
 apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1 && apt-get update -y > /dev/null 2>&1
