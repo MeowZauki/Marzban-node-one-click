@@ -4,6 +4,11 @@
 
 ---
 
+curl -fsSL https://raw.githubusercontent.com/MeowZauki/REPO/main/node.sh -onode.sh
+chmod +x node.sh
+./node.sh
+
+
 ## 📌 Overview — English
 
 This repository provides a one-step installation script and configuration to run the **Marzban Node** service using Docker Compose. The package includes:
@@ -146,30 +151,3 @@ Paste the entire block when the script prompts you.
 
 ---
 
-## 📜 License
-
-This documentation and the installation script are provided under the MIT License by default. You can change it in your GitHub repository.
-
----
-
-## 📎 Suggested GitHub README structure
-
-* Title & short description (both languages)
-* Badges (optional)
-* Quick start (one-liner)
-* Installation (detailed steps)
-* Configuration (certificate, ports)
-* Troubleshooting
-* License
-
----
-
-## 💾 Download
-
-You can download the generated README (Markdown) from the download link provided in this GitHub issue reply.
-
----
-
----
-
-*End of document.*
