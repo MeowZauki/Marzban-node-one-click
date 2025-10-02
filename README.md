@@ -4,7 +4,7 @@
 
 ---
 
-curl -fsSL https://raw.githubusercontent.com/MeowZauki/REPO/main/node.sh -onode.sh
+curl -fsSL https://raw.githubusercontent.com/MeowZauki/REPO/main/node.sh -o node.sh
 chmod +x node.sh
 ./node.sh
 
