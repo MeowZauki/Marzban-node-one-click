@@ -5,8 +5,10 @@
 ---
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/MeowZauki/REPO/main/node.sh -o node.sh
+bash <(wget -qO- https://raw.githubusercontent.com/MeowZauki/Marzban-node-one-click/main/node.sh)
+
 chmod +x node.sh
+
 ./node.sh
 ```
 
