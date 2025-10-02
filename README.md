@@ -7,9 +7,6 @@
 ```sh
 bash <(wget -qO- https://raw.githubusercontent.com/MeowZauki/Marzban-node-one-click/main/node.sh)
 
-chmod +x node.sh
-
-./node.sh
 ```
 
 ## 📌 Overview — English
