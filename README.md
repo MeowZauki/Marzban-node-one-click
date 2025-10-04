@@ -10,6 +10,10 @@ apt update && apt upgrade -y
 ```sh
 bash <(wget -qO- https://raw.githubusercontent.com/MeowZauki/Marzban-node-one-click/main/node.sh)
 ```
+به جای استفاده از مراحل تکی تکی مکیتوان از این هم استفاده کرد
+```sh
+apt update && apt upgrade -y && bash <(wget -qO- https://raw.githubusercontent.com/MeowZauki/Marzban-node-one-click/main/node.sh)
+```
 بعضی مواقع باید از دستور زیر پس از اتمام مراحل استفاده کرد تا سرور ریست شود( اگر نود به پنل اصلی وصل نشد و یا قطع و وصلی مکرر داشت استفاده کنید)
 ```sh
 reboott
