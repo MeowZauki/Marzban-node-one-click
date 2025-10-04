@@ -16,7 +16,7 @@ apt update && apt upgrade -y && bash <(wget -qO- https://raw.githubusercontent.c
 ```
 بعضی مواقع باید از دستور زیر پس از اتمام مراحل استفاده کرد تا سرور ریست شود( اگر نود به پنل اصلی وصل نشد و یا قطع و وصلی مکرر داشت استفاده کنید)
 ```sh
-reboott
+reboot
 ```
 <img width="588" height="147" alt="image" src="https://github.com/user-attachments/assets/0f16526b-78ae-4ed1-b41b-eda9038dad8f" />
 
