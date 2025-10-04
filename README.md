@@ -10,7 +10,7 @@ apt update && apt upgrade -y
 ```sh
 bash <(wget -qO- https://raw.githubusercontent.com/MeowZauki/Marzban-node-one-click/main/node.sh)
 ```
-به جای استفاده از مراحل تکی تکی مکیتوان از این هم استفاده کرد
+به جای استفاده از مراحل تکی تکی میتوان از این هم استفاده کرد
 ```sh
 apt update && apt upgrade -y && bash <(wget -qO- https://raw.githubusercontent.com/MeowZauki/Marzban-node-one-click/main/node.sh)
 ```
