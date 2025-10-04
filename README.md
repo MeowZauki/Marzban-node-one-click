@@ -4,7 +4,7 @@
 ---
 اول سرور خود را آپدیت کنید 
 ```sh
-apt update && apt upgrae -y
+apt update && apt upgrade -y
 ```
 حال بعد از آپدیت سرور اسکریپت زیر را اچرا کنید 
 ```sh
