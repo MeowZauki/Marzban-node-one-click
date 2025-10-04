@@ -18,5 +18,6 @@ apt update && apt upgrade -y && bash <(wget -qO- https://raw.githubusercontent.c
 ```sh
 reboott
 ```
-https://github.com/MeowZauki/Marzban-node-one-click/blob/main/image.png
+<img width="588" height="147" alt="image" src="https://github.com/user-attachments/assets/0f16526b-78ae-4ed1-b41b-eda9038dad8f" />
+
 
