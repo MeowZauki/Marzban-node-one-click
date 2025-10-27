@@ -57,6 +57,8 @@ echo -e "${GREEN}✅ Certificate saved.${NC}"
 # Step 7
 echo -e "${YELLOW}[7/7] Starting Docker Compose...${NC}"
 docker compose up -d > /dev/null 2>&1
+docker compose down --remove-orphans; docker compose up -d > > /dev/null 2>&1
+
 echo -e "${GREEN}✅ Docker Compose started.${NC}"
 
 # Final message
