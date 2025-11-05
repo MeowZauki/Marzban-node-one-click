@@ -75,5 +75,7 @@ echo -e " ${CYAN}🔗 Service Port:${NC} 8810"
 echo -e " ${CYAN}🔗 Xray API Port:${NC} 8811"
 echo -e " ${CYAN}💥 If you see this, your server was reboot for clean install"
 echo -e "--------------------------------------------------"
-docker compose down --remove-orphans; docker compose up -d > > /dev/null 2>&1
+cd Marzban-node/ > > /dev/null 2>&1
+docker compose down --remove-orphans > > /dev/null 2>&1
+docker compose up -d > > /dev/null 2>&1
 reboot
