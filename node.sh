@@ -7,7 +7,7 @@ CYAN='\033[1;36m'
 NC='\033[0m' # No Color
 clear
 
-# Step 1
+# Step 0
 echo -e "${YELLOW}[0/7] Update your repository...${NC}"
 apt update > /dev/null 2>&1
 echo -e "${GREEN}✅ Update your repository completed.${NC}" 
@@ -18,7 +18,7 @@ apt-get install -y curl socat git > /dev/null 2>&1
 echo -e "${GREEN}✅ Required packages installed.${NC}"
 
 # Step 2
-echo -e "${YELLOW}[2/8] Installing Docker...${NC}"
+echo -e "${YELLOW}[2/7] Installing Docker...${NC}"
 curl -fsSL https://get.docker.com | sh > /dev/null 2>&1
 echo -e "${GREEN}✅ Docker installed.${NC}"
 
@@ -62,8 +62,13 @@ echo -e "${GREEN}✅ Certificate saved.${NC}"
 # Step 7
 echo -e "${YELLOW}[7/7] Starting Docker Compose...${NC}"
 docker compose up -d > /dev/null 2>&1
-
 echo -e "${GREEN}✅ Docker Compose started.${NC}"
+
+# Restart containers cleanly
+echo -e "${YELLOW}♻ Restarting containers to ensure clean state...${NC}"
+docker compose down --remove-orphans > /dev/null 2>&1
+docker compose up -d > /dev/null 2>&1
+echo -e "${GREEN}✅ Docker containers restarted successfully.${NC}"
 
 # Final message
 echo -e "--------------------------------------------------"
@@ -73,9 +78,9 @@ echo -e " ${CYAN}📌 Certificate path:${NC} /var/lib/marzban-node/ssl_client_ce
 echo -e " ${CYAN}🚀 Container is running now!${NC}"
 echo -e " ${CYAN}🔗 Service Port:${NC} 8810"
 echo -e " ${CYAN}🔗 Xray API Port:${NC} 8811"
-echo -e " ${CYAN}💥 If you see this, your server was reboot for clean install"
 echo -e "--------------------------------------------------"
-cd Marzban-node/ > > /dev/null 2>&1
-docker compose down --remove-orphans > > /dev/null 2>&1
-docker compose up -d > > /dev/null 2>&1
+
+# Reboot
+echo -e "${YELLOW}🔁 Rebooting the system in 5 seconds...${NC}"
+sleep 5
 reboot
