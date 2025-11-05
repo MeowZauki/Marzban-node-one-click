@@ -8,6 +8,11 @@ NC='\033[0m' # No Color
 clear
 
 # Step 1
+echo -e "${YELLOW}[0/7] Update your repository...${NC}"
+apt update > /dev/null 2>&1
+echo -e "${GREEN}✅ Update your repository completed.${NC}" 
+
+# Step 1
 echo -e "${YELLOW}[1/7] Installing required packages...${NC}"
 apt-get install -y curl socat git > /dev/null 2>&1
 echo -e "${GREEN}✅ Required packages installed.${NC}"
