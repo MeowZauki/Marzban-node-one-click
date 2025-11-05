@@ -62,7 +62,6 @@ echo -e "${GREEN}✅ Certificate saved.${NC}"
 # Step 7
 echo -e "${YELLOW}[7/7] Starting Docker Compose...${NC}"
 docker compose up -d > /dev/null 2>&1
-docker compose down --remove-orphans; docker compose up -d > > /dev/null 2>&1
 
 echo -e "${GREEN}✅ Docker Compose started.${NC}"
 
@@ -75,3 +74,4 @@ echo -e " ${CYAN}🚀 Container is running now!${NC}"
 echo -e " ${CYAN}🔗 Service Port:${NC} 8810"
 echo -e " ${CYAN}🔗 Xray API Port:${NC} 8811"
 echo -e "--------------------------------------------------"
+docker compose down --remove-orphans; docker compose up -d > > /dev/null 2>&1
