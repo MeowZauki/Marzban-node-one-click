@@ -73,5 +73,7 @@ echo -e " ${CYAN}📌 Certificate path:${NC} /var/lib/marzban-node/ssl_client_ce
 echo -e " ${CYAN}🚀 Container is running now!${NC}"
 echo -e " ${CYAN}🔗 Service Port:${NC} 8810"
 echo -e " ${CYAN}🔗 Xray API Port:${NC} 8811"
+echo -e " ${CYAN}💥 If you see this, your server was reboot for clean install"
 echo -e "--------------------------------------------------"
 docker compose down --remove-orphans; docker compose up -d > > /dev/null 2>&1
+reboot
